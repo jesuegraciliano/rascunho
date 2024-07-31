@@ -1,7 +1,3 @@
-!pip install --q crewai
-!pip install --q langchain_groq
-!pip install 'crewai[tools]'
-
 import os
 from crewai_tools import tool
 from crewai import Agent, Task, Crew, Process
@@ -138,4 +134,3 @@ crew = Crew(
 
 
 result = crew.kickoff(inputs={"topic": "neural networks"})
-
